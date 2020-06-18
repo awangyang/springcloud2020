@@ -26,9 +26,9 @@ public class PaymentController {
     @PostMapping("/create")
     public CommonResult create(@RequestBody Payment payment) {
         int i = paymentService.create(payment);
-
         log.info("创建结果 " + serverPort + ": " + payment);
         if (i > 0) {
+            log.info("创建成功: " + payment);
             return CommonResult.success(i);
         } else {
             return CommonResult.fail("失败");

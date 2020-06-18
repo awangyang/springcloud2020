@@ -23,6 +23,10 @@ public class CommonResult implements Serializable {
         return new CommonResult(200, message, data);
     }
 
+    public static CommonResult success(Object data) {
+        return new CommonResult(200, "成功", data);
+    }
+
     public static CommonResult fail(String message) {
         return new CommonResult(500, message, null);
     }
