@@ -9,12 +9,12 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     # mysql驱动类
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://192.168.25.20:3306/db2020?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
-#    username: root
-#    password: hadoop
-    url: jdbc:mysql://localhost:3306/db2020?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://192.168.25.20:3306/db2020?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
-    password: casia
+    password: hadoop
+#    url: jdbc:mysql://localhost:3306/db2020?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+#    username: root
+#    password: casiaspringcloud2020
 eureka:
   client:
     register-with-eureka: true
