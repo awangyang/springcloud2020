@@ -1,0 +1,20 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          #  uri: https://github.com/awangyang/springcloud-config.git
+          uri: http://192.168.25.20:8090/wangyang/springcloud-study.git
+          search-paths:
+            # - springcloud-config
+            - springcloud-study
+      label: master
+eureka:
+  client:
+    service-url:
+      #单机版
+      defaultZone: http://localhost:7001/eureka
