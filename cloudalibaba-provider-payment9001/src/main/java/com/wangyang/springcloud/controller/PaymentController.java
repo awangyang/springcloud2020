@@ -17,7 +17,7 @@ public class PaymentController {
 
     @GetMapping("/payment/{id}")
     public String paymentInfo_OK(@PathVariable("id") Integer id) {
-        return serverPort;
+        return serverPort + "---" + id;
     }
 
 }
